@@ -1,0 +1,22 @@
+﻿div{
+    height:250px;
+    width:250px;
+    background-color:blue;
+    border-radius:5px;
+    box-shadow:2px 2px 5px #808080;
+    transition:ease-in-out;
+    transition:width 2s;
+}
+
+div:hover{
+    width:350px;
+}
+
+
+
+
+p{
+    text-shadow:1px 1px 1px #ff0000;
+}
+
+

@@ -1,0 +1,116 @@
+﻿
+/*yakalanacak_element (selector) { attribute (ozellik):value (deger)}*/
+
+/*selector { key:value;}*/
+
+span{
+
+    background-color:antiquewhite;
+    color:#808080;
+
+}
+
+*{
+    font-size:x-large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*seciciler*/
+
+/*element seciciler => element isminden secilir. sayfada bulunun o tipteki tüm elementleri seçer*/
+
+/*butun h1lere uygular*/
+h1{
+ color:red;
+}
+
+/*id ye css*/
+/*# id den yakalamak için*/
+/*id olunca tek unique bir element yakalar*/
+
+#footer{
+    text-align:center;
+}
+
+/*class başına . konur ve aynı class a sahip birden fazla elemente stil uygular*/
+
+h1.Baslik1{
+    color:blue;
+}
+
+/*^baslayan demek*/
+a[href^='https']{
+    text-decoration:none; 
+/*alt-çizgisini kaldır*/
+}
+
+/*$ biten demek*/
+a[href$='tr']{
+    text-decoration:none; 
+    color:rebeccapurple;
+/*alt-çizgisini kaldır*/
+}
+
+
+input[type='button']{
+    border:none;
+/*kenarlık yok*/
+}
+
+
+/*sadece ul altındaki li leri seç*/
+/*child-selector*/
+ul>li{
+    list-style:circle;
+}
+
+/*li lerden ilkini seçer*/
+
+ul>li:first-child{
+    color:forestgreen;
+}
+
+ul>li:nth-child(2){
+    color:yellow;
+}
+
+ol>li:last-child{
+    color:burlywood;
+}
+
+/*Adjacent Sibling */
+
+ul+div{
+    background-color:aquamarine;
+}
+
+/*Sibling*/
+
+ul~div{
+    background-color:cadetblue;
+}
+
+/*ilk harf seçici*/
+#paraf::first-letter{
+    font-size:xx-large;
+}
+/*paraftan önce yeni koy*/
+#paraf::before{
+    content:'Yeni'
+}
+
+#paraf::after{
+    content:'Sonuna Geldim'
+}
+
+/*divin altındaki bütün p ler*/
+
+div p{
+    color:brown;
+}
+
+/*sadece div in 1 altındaki yakalamak için*/
+
+div#container>p{
+    color:yellow;
+}

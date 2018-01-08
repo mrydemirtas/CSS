@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'AmaticSCRegular';
+	src: url('/Fonts/A/AmaticSCRegular.eot');
+	src: local('/Fonts/A/AmaticSCRegular'), url('/Fonts/A/AmaticSCRegular.woff') format('woff'), url('/Fonts/A/AmaticSCRegular.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_69112">Text with this font applied</p> */
+.fontsforweb_fontid_69112 {
+	font-family: 'AmaticSCRegular' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */
